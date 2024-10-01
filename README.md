@@ -77,6 +77,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 - create-react-app
 - configured tailwind css
+- Header
+- login
+- sign up
 
 # Features
 - login/sign up
