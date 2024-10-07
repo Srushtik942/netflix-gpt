@@ -93,6 +93,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Sign In/ Sign Out
 - Update Profile
 - Fetch moviews from TMDB Movies
+- Unsubscribed to the onauthStateChanged callback
+- add hardcoded values to the constant files
 
 # Features
 - login/sign up
