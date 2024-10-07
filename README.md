@@ -95,6 +95,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Fetch moviews from TMDB Movies
 - Unsubscribed to the onauthStateChanged callback
 - add hardcoded values to the constant files
+- Register for TMDB API & create new app and get    access token
+- Get data from TMDB now playing movies list API
+- Make Store and fetch the data inside the redux store
+- make new files of hook useNowPlayingMovies (fetching data from  TMDB API)
+
 
 # Features
 - login/sign up
