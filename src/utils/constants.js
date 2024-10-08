@@ -8,6 +8,6 @@ export const API_OPTIONS = {
     headers: {
       accept: 'application/json',
       Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0MDBlMDgzNDNkOWQ0NTZmOGVlZjExZmZkMTEwMDIzOSIsIm5iZiI6MTcyODI4OTE2Mi45MDI5ODcsInN1YiI6IjY3MDM5Nzc5YjRlM2QxYTQ4NDczZTBhNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.IKvIIaax53kDpgoDnVi1Gd73-uMiU279XuO07x3g-Qc'
-    }
+    },
 
 };
