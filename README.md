@@ -99,6 +99,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - Get data from TMDB now playing movies list API
 - Make Store and fetch the data inside the redux store
 - make new files of hook useNowPlayingMovies (fetching data from  TMDB API)
+- Custom Hooks nowPlayingMovies
+- Create movieSlice
+- Update Store with data
+- MainContainer & SecondaryContainer
+- Fetching trailer Video
+- Update store with trailer video data
+- Embeded the yt video
+- Make it autoplay and mute
+- react icons (npm install react-icons --save)
 
 
 # Features
