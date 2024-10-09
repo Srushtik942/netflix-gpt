@@ -1,32 +1,30 @@
-import React, { useEffect } from 'react'
-import { API_OPTIONS } from '../utils/constants'
 
+import {  useSelector } from 'react-redux';
+import useFetchTrailerVideo from '../hooks/useFetchTrailerVideo';
 
 //fetching trailer video
 
 const VideoBackgroun = (movieId) => {
 
-    const getMovieVideos = async () =>{
-        const data = await fetch('https://api.themoviedb.org/3/movie/1114513/videos?language=en-US',API_OPTIONS );
+  //fetcing trailer of particular movie dynamically
+    // const [trailerId, settrailerId] = useState(null);
 
-        const json = await data.json();
-        console.log(json);
+    const trailerVideo = useSelector((store)=>store.movies?.trailerVideo);
 
-        const filtertrailer = json.results.filter((video)=> video.type === "Trailer");
+     // settrailerId(trailer.key);
 
-       const trailer = filtertrailer.length? filtertrailer[0] : json.results[0];
-        console.log(trailer);
+     useFetchTrailerVideo(movieId);
 
-    };
-
-    useEffect(()=>{
-
-        getMovieVideos();
-
-    },[]);
 
   return (
     <div>
+
+    <iframe width="560" height="315"
+    src={"https://www.youtube.com/embed/"+trailerVideo?.key }
+     title="YouTube video player"
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+     referrerPolicy="strict-origin-when-cross-origin"
+     ></iframe>
 
     </div>
   )
