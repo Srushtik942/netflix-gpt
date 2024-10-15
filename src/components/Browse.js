@@ -6,7 +6,7 @@ import usePopularMovies from '../hooks/usePopularMovies';
 import useTopratedMovies from '../hooks/useUpcomingMovies';
 import useUpcomingMovies from '../hooks/useUpcomingMovies';
 
-const Browse = () => {
+const Browse = () =>{
 
   useNowPlayingMovies();
   usePopularMovies();
