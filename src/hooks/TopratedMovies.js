@@ -1,11 +1,13 @@
 
+  //fetch data from tmdb api and updating the store
+
   import { useDispatch } from "react-redux";
-  import {  addTopratedMovies} from "../utils/moviesSlice";
+  import {   addTopratedMovies} from "../utils/moviesSlice";
   import { useEffect } from "react";
   import { API_OPTIONS } from '../utils/constants';
 
 
-  const useTopratedMovies = () =>{
+  const useTopratedMovies= () =>{
 
   const dispatch = useDispatch();
   const getTopratedMovies = async ()=>{
