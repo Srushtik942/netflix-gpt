@@ -1,13 +1,13 @@
 
   //fetch data from tmdb api and updating the store
 
-  import {useDispatch } from "react-redux";
-  import {addUpcomingMovies} from "../utils/moviesSlice";
-  import {useEffect } from "react";
-  import {API_OPTIONS } from '../utils/constants';
+  import { useDispatch } from "react-redux";
+  import { useEffect } from "react";
+  import { API_OPTIONS } from '../utils/constants';
+  import { addUpcomingMovies } from "../utils/moviesSlice";
 
 
-  const useUpcomingMovies= () =>{
+  const useUpcomingMovies = () =>{
 
   const dispatch = useDispatch();
   const getUpcomingMovies = async ()=>{
