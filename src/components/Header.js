@@ -6,6 +6,7 @@ import {addUser, removeUser} from "../utils/userSlice";
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { onAuthStateChanged } from 'firebase/auth';
+import { toggleGPTSearchView } from '../utils/GptSlice';
 
 
 
@@ -45,7 +46,11 @@ const Header = () => {
 
   },[]);
 
+const handleGPTSerachClick = ()=>{
+  //toggle gpt serach button
+  dispatch (toggleGPTSearchView());
 
+}
 
 
   return (
@@ -53,7 +58,11 @@ const Header = () => {
 <img className='w-44' src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png
 "alt="logo"/>
 <div className='w-9 mx-40 flex'>
-  <button className=' px-4 m-2 h-10 bg-purple-500 text-white'>Search!</button>
+  <button className=' px-4 m-3 h-8 bg-purple-600 text-white rounded-sm'
+
+  onClick={handleGPTSerachClick}
+
+  >Search!</button>
   <img className='w-8 h-8 my-3'
   alt="usericon" src="https://wallpapers.com/images/hd/netflix-profile-pictures-1000-x-1000-qo9h82134t9nv0j0.jpg"></img>
 <button onClick={handleSignOut}
