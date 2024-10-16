@@ -13,3 +13,11 @@ export const API_OPTIONS = {
 };
 
 export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w780/";
+
+
+export const SUPPORTED_LANGUAGES =[{identifier:"en", name:"English"},
+{identifier:"marathi", name:"Marathi"},
+{identifier:"hindi", name:"Hindi"},
+{identifier:"japanese", name:"Japanese"},
+{identifier:"french", name:"French"},
+{identifier:"spanish", name:"Spanish"}]

@@ -7,6 +7,7 @@ import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { onAuthStateChanged } from 'firebase/auth';
 import { toggleGPTSearchView } from '../utils/GptSlice';
+import { SUPPORTED_LANGUAGES } from "../utils/constants";
 
 
 
@@ -54,10 +55,17 @@ const handleGPTSerachClick = ()=>{
 
 
   return (
-    <div className='absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between'>
+    <div className='absolute w-screen px-32 py-2 bg-gradient-to-b from-black z-10 flex justify-between'>
 <img className='w-44' src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png
 "alt="logo"/>
-<div className='w-9 mx-40 flex'>
+<div className='w-9 mx-40 flex '>
+  <select className=" rounded-sm bg-gray-900 h-12 py-2 text-white ">
+    {SUPPORTED_LANGUAGES.map((language )=>(
+      <option key={language.identifier} value={language.identifier}>{language.name}</option>
+
+    ))}
+
+  </select>
   <button className=' px-4 m-3 h-8 bg-purple-600 text-white rounded-sm'
 
   onClick={handleGPTSerachClick}
