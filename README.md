@@ -110,6 +110,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 - react icons (npm install react-icons --save)
 - GPT serach feature
 - Add the link in the header
+- Multi-language feature
+- GPT serach page
+
 
 # Features
 - login/sign up
